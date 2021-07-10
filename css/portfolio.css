@@ -49,21 +49,23 @@ figure{
     margin-bottom:2.45rem;
     font-size: 160%;
 }
-.header .downArrow{
+.downArrow{
     position:absolute;
-    top:92%;
-    left:36%;
-    transform: translate(-50%,-40%);
+    top:100%;
+    left:50%;
+    transform: translate(calc(-50% - 1rem),-50%) rotate(90deg);
     width:5rem;
     height:5rem;
     display: inline-block;
     background:lightskyblue;
     border-radius:50%;
     vertical-align: middle;
-    padding-top:1.5rem;
-    rotate: 180deg;
+    line-height: 5rem;
     font-size:3rem;
-
+}
+a.downArrow{
+    text-decoration: none;
+    color:inherit;
 }
 .header .downArrow:hover{
     background-color: lightgreen;
