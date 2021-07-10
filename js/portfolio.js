@@ -24,6 +24,7 @@ const makeRepo = ()=>{
     .then(data=>{
         const repos=data.filter(repo=>!repo.fork);
         repoSection.innerHTML="";
+        console.log(repos);
         repos.forEach(repo => {
             repoSection.innerHTML+=`
             <article class="repo repo1">
@@ -38,6 +39,12 @@ const makeRepo = ()=>{
             </div>
             <div class="watchers">
                 Watcher's count: ${repo.watchers}
+            </div>
+            <div class="clone_url">
+            Visit Project repo at:
+            <a href="${repo.clone_url}">
+                 ${repo.name}
+            </a>
             </div>
         </article>`
         });
