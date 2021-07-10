@@ -65,6 +65,9 @@ figure{
     font-size:3rem;
 
 }
+.header .downArrow:hover{
+    background-color: lightgreen;
+}
 form{
     margin:2rem;
     
@@ -84,13 +87,15 @@ form{
     flex:1;
     margin:1rem 0.5rem;
     padding:0.7rem 2rem;
-    min-width:30rem;
+    min-width:49%;
+    width:45%;
+    max-width:95vh;
     margin-left:0px;
     display:inline-block;
     border:0.5px solid lightskyblue;
     border-radius:1rem;
     line-height:150%;
-
+    
 }
 .repos .repo .name{
     text-align: center;
